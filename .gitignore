@@ -7,6 +7,8 @@ Docker/
 .obsidian/workspace.json
 .obsidian/workspaces.json
 .trash/
+.obsidian/daily-notes.json
+.obsidian/plugins/password-protection/
 
 # Operating system files
 .DS_Store
