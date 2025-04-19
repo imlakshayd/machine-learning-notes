@@ -1,0 +1,13 @@
+# Folders to ignore
+Daily Notes/
+Docker/
+
+# Standard Obsidian ignores
+.obsidian/cache/
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.trash/
+
+# Operating system files
+.DS_Store
+Thumbs.db
