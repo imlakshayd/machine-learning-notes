@@ -42,4 +42,5 @@ And we will also simultaneously update $w_{j}$ (for  $j =1,...,n)$ and $b$
 }
 
 There is alternative to gradient descent called the **normal equation** it only works for linear regression and can solve for w, b without going through iterations, but it is slow when there is a large amount (> 10,000) features. It maybe used in some older libraries in machine learning to implement linear regression, but most of the times we will gradient descent using the equations above for finding w and b.
- 
+
+When doing Gradient descent it is crucial that all the features we use are on a similar scale to one and another. This is called [[Feature Scaling]], if features are not on scale and very different, gradient descent can become inefficient and slow convergence or have erratic updates.
