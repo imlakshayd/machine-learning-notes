@@ -21,7 +21,7 @@ We should update the algorithm simultaneously meaning not first updating for $w$
 
 ![[Pasted image 20250418184354.png]]
 
-The learning is a positive value which is chosen by you when doing Gradient descent, although we a want learning rate to be not too small or big. If the learning rate is too big it can overshoot and never reach the minimum and can fail too converge to it. While if the learning rate is too small it might take too many steps and too much time which can slow our algorithm down. Also note that when gradient descent is closer and closer to the minimum it will take smaller and smaller steps automatically because the derivative itself becomes smaller.
+The learning is a positive value which is chosen by you when doing Gradient descent, although we a want [[Learning Rate]] to be not too small or big. If the learning rate is too big it can overshoot and never reach the minimum and can fail too converge to it. While if the learning rate is too small it might take too many steps and too much time which can slow our algorithm down. Also note that when gradient descent is closer and closer to the minimum it will take smaller and smaller steps automatically because the derivative itself becomes smaller.
 
 Our previous notation of Gradient descent was not vectorized and only dealt with one feature and weight, while in the real world we can have multiple features and weigh. Below is the formula which is the vectorized form using multiple features and weights for $n$ features $(n \ge 2)$:
 
@@ -44,3 +44,10 @@ And we will also simultaneously update $w_{j}$ (for  $j =1,...,n)$ and $b$
 There is alternative to gradient descent called the **normal equation** it only works for linear regression and can solve for w, b without going through iterations, but it is slow when there is a large amount (> 10,000) features. It maybe used in some older libraries in machine learning to implement linear regression, but most of the times we will gradient descent using the equations above for finding w and b.
 
 When doing Gradient descent it is crucial that all the features we use are on a similar scale to one and another. This is called [[Feature Scaling]], if features are not on scale and very different, gradient descent can become inefficient and slow convergence or have erratic updates.
+
+To make sure that gradient descent is working correct would need to look at the [[Learning Rate]] as talked about before and the learning curve. To simply put it we want to minimize our cost function after each iteration and we will know when it close to converge but seeing if the learning curve is starting to plateau. 
+
+What features we use for our model also make a huge impact on how the model will performance and can drastically change it to better predict data. We can choose better features for model or do [[Feature Engineering]] which can allow use to create, transform and combine existing features into new ones which help our model become more accurate.
+
+We might also have features which might not fit the data using just linear regression and we may have a quadratic or cubic model which fits out data better. In that case we can do [[Polynomial regression]]. This allows our features to better fit that data of our model and allows for a more accurate model as well, but when using polynomial regression we should refer back to [[Feature Scaling]] as there ranges are vastly different and it can cause our model to become more efficient.
+![[Pasted image 20250420170914.png]]

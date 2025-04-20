@@ -17,6 +17,7 @@ This vault currently includes notes on the following topics:
     *   [Linear Regression](Machine%20Learning%20Specialization/Linear%20regression.md)
     *   [Supervised Learning](Machine%20Learning%20Specialization/Supervised%20Learning.md)
     *   [Unsupervised Learning](Machine%20Learning%20Specialization/Unsupervised%20Learning.md)
+    *   [[Feature Scaling]]
     *   *(More topics will be added as studies progress)*
 
 *   **Images:**
