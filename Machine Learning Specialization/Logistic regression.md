@@ -31,4 +31,13 @@ You can get very complex boundaries when using non-linear models which would acc
 
 To measure the error of the sigmoid function, we can't use the same function we used for linear regression because in linear regression we had values for $y'$ which range from all real numbers. But since we are doing classification, we can only have values for $y'$ ranging from 0 to 1.
 
-We can use the [[Logistic loss function]], also known as the log loss function which will help us calculate the given error and help us correct our model.
+We can use the [[Logistic loss function]], also known as the log loss function which will help us calculate the given error and help us correct our model for when we use it in the Cost function for logistic regression and do gradient descent for logistic regression.
+
+When doing [[Gradient Descent]] for logistic regression it will use the same concepts as we learned for the linear regression. We will monitor the learning curve and see when it plateaus, do an vectorized implementation so when we code it becomes more efficient and requires less compute, and we will also scale features as needed. 
+
+When creating models it is also possible for model to either [Overfit](obsidian://open?vault=Obsidian%20Vault&file=Machine%20Learning%20Specialization%2FOverfitting) or Underfit the data. When the model matches the training data very closely with 0 or almost no errors it would mean our model will fail to make predictions given new data and it has an high variance. Alternatively, when you underfit a model it will make poor predictions because the model hasn't taken account of the complexity of the training data otherwise known as having a high bias. 
+
+![[Pasted image 20250421165702.png]]
+
+The image above shows when the model has underfit, and over fit the data, as well as when it has generalized that data well.
+

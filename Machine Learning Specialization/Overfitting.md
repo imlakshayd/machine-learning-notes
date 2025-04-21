@@ -1,0 +1,11 @@
+Overfittings means when we have a model which essentially memorizes the training data instead of understanding it which leads to it failing to make accurate predictions on new data.  We want a model which is fit, meaning it does a good job on make predictions on new data it is given.
+
+If our model is overfitted we have some ways to address this problem this can be done by the following:
+
+- Collect more training examples. Sometimes the problem with our model is that we simply don't have enough training examples for the model to train on which can lead it overfit on the given data. An easy fix is just to provide more training data so our model has better prediction on newer data. ![[Pasted image 20250421172243.png]]
+  
+- We can also choose to select more or less features to include/exclude in our model. Our model at might have too many features but not enough data for all those features just like before and can overfit again. We can also solve this by providing more training data on all our features so our model makes better predictions in the future. Another option is to exclude some of the features if we don't have enough data available and select which features would help our model the most in terms of getting a more accurate prediction on new data. Although when we exclude some features we might lose crucial data and can lose actual useful features which would have helped out model.![[Pasted image 20250421172746.png]]
+  
+- We can also [regularized](obsidian://open?vault=Obsidian%20Vault&file=Machine%20Learning%20Specialization%2FRegularization) the model, this means we would reduce the size of parameters $w_j$(weights). When we have large values for $w_j$ we can use regularization which sets smaller values for $w_j$. This will lead to our model to to generalize the data more which will lead to it making better predictions on new data.![[Pasted image 20250421173344.png]] Although note when we are using regularization we do not set the value of $w_j = 0$ , because this is the same as eliminating  the feature, and as said before this can mean we actually lose a useful feature.
+
+  

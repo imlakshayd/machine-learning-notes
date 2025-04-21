@@ -1,4 +1,4 @@
-Gradient Descent is used within [[Linear regression]] by continuing to adjust the weights and bias of the cost function and optimizing it for the least loss. It starts with its given cost function and from there on it looks to move in the direction which would minimize the loss the greatest. It continues to iterate this until it comes to the lowest loss for the function at which point it can't go any further.
+Gradient Descent is used within [[Linear regression]] and [[Logistic regression]] by continuing to adjust the weights and bias of the cost function and optimizing it for the least loss. It starts with its given cost function and from there on it looks to move in the direction which would minimize the loss the greatest. It continues to iterate this until it comes to the lowest loss for the function at which point it can't go any further.
 
 ![[Pasted image 20250418181637.png]]
 
@@ -51,3 +51,34 @@ What features we use for our model also make a huge impact on how the model will
 
 We might also have features which might not fit the data using just linear regression and we may have a quadratic or cubic model which fits out data better. In that case we can do [[Polynomial regression]]. This allows our features to better fit that data of our model and allows for a more accurate model as well, but when using polynomial regression we should refer back to [[Feature Scaling]] as there ranges are vastly different and it can cause our model to become more efficient.
 ![[Pasted image 20250420170914.png]]
+
+For [[Logistic regression]] we will use the same concepts as we have applied above for linear regression, but we will instead change the equation we substitute for our model. As shown below
+
+repeat {
+
+$w_j = w_j-\alpha\frac{d}{dw_{j}}J(\vec{w},b)$
+
+$b = b-\alpha\frac{d}{db}J(\vec{w},b)$
+
+} simultaneous updates
+
+When we expand the derivates we get the equation
+
+repeat {
+
+$w_j = w_j-\alpha[\frac{1}{m}\sum_{i=1}^{m}(f\vec{w},b(\vec{x}^{(i)})-y^{(i)})x_{j}^{(i)}]$
+
+$b = b-\alpha[\frac{1}{m}\sum_{i=1}^{m}(f\vec{w},b(\vec{x}^{(i)})-y^{(i)})]$
+
+} simultaneous updates
+
+Now we can substitute our equation for logistic regression which is $f\vec{w},b(\vec{x})=\frac{1}{1+e^{-(\vec{w}\cdot\vec{x}+b)}}$
+
+repeat {
+
+$w_j = w_j-\alpha[\frac{1}{m}\sum_{i=1}^{m}((\frac{1}{1+e^{-(\vec{w}\cdot\vec{x}+b)}}))-y^{(i)})x_{j}^{(i)}]$
+
+$b = b-\alpha[\frac{1}{m}\sum_{i=1}^{m}((\frac{1}{1+e^{-(\vec{w}\cdot\vec{x}+b)}}))-y^{(i)})]$
+
+} simultaneous updates
+
