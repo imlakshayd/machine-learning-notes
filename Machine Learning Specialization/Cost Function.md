@@ -1,5 +1,7 @@
 The cost functions is used within [[Linear regression]] to measure how well the model's prediction aligns with actual data. Using the actual and predicted data we can calculate the difference and adjust the weights and parameters of the model.
 
+%% There is a difference between Loss and Cost, where Loss just means for one iteration, while Cost applies to the whole dataset but many online sources use them interchangeably  %%
+
 The cost function uses the [[Mean Squared Error]] (MSE) which helps assessing the accuracy of the predictive models by measuring the average squared difference between the predicted values and the actual values in the dataset.  
 
 Below is the the mathematical cost function 
