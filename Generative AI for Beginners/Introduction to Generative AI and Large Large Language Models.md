@@ -1,0 +1,8 @@
+
+Generative AI is a subset of deep learning, which itself is a subset Machine learning. It first started in the 1960s when primitive chatbots where written. These chatbots used a knowledge base and by using keywords as triggers they would provide answers, but it didn't work well to scale. In the 90s, statistical analysis was applied to artificial intelligence which gave rise to machine learning. Where machine learn patterns from data without being programmed too, and these models allowed machines to understand human language based on text-label pairings. In 2010s, advancements made in machine learning algorithms lead to the development of neural networks also know as deep learning algorithms. Recurrent Neural Networks (RNNs) a specific kind of neural network, allowed the natural language processing (NLP) models to understand text by adding context to each word in a sentence. More recently the development of an new model called Transformers was made and it allowed to overcome the limits of RNNs which weren't able to understand large input text. Transformers use a an attention mechanism which gives different weights to inputs and it essentially pays more attention to the input. This lead to the rise of generative AI models also known as Large Language Models (LLMs). These LLMs where trained on a vast amount of unlabeled textual data, such as books, articles and websites. This allowed LLMs to learn patterns in language which allow them to generate text which follows grammatic and semantics used by humans based on the input given.
+
+![[Pasted image 20250425141814.png]]
+
+These large language models work using the Generative Pre-trained Transformer model (GPT).
+
+- Using Tokenizers,         
